@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@900&family=Secular+One&family=Ubuntu:wght@300&display=swap');
+
+.App , .quote-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.App {
+  background-color: rgb(111, 13, 202);
+  width: 100vw;
+  height: 100vh;  
+}
+
+.quote_box {
+  background-color: white;
+  width: 25vw;
+  height: auto;
+  border-radius: 5px;
+  padding: 1.5em;
+}
+
+.quote-container, .buttons , .quote-author{
+  height: auto;
+  width: auto; 
+  border-radius: 5px;
+}
+
+.quote-text {
+  font-family: Rubik, sans-serif;
+  font-weight: 450;
+  font-size: 1.8em;
+  color: rgb(111, 13, 202);
+}
+
+.quote-author {
+  position: relative;
+  color:rgb(111, 13, 202);
+  font-size: 1.1em;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.button {
+  color: white;
+  background-color: rgb(111, 13, 202);
+  border: 0;
+  padding: 0.7em;
+  border-radius: 2.5px;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1em;
+  position: relative;
+}
+
+#tweet-btn {
+  margin-left: 16vw;
+}
+
+#wrapper, #new-quote, #tweet-btn {
+  transition: background 0.6s ease-in-out;
+}
+
+#text, #author {
+  transition: color 0.6s ease-in-out;
+}
+
+#quotation {
+  font-family: 'Secular One', sans-serif;  
+}
