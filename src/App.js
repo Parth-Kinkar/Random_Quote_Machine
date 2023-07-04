@@ -56,6 +56,10 @@ const App = () => {
     document.getElementById('author').style.color = colors[color];            
   };
 
+  const getTweetLink = () => {
+    return `https://twitter.com/intent/tweet`;
+  };
+
   return (
     <div className="App" id="wrapper">
       <div className="quote_box" id="quote-box">
@@ -64,7 +68,7 @@ const App = () => {
         </div>
         <p className="quote-author" id="author" align="right">- {quote.author}</p>
       <button onClick={generateQuote} className="button" id="new-quote" align="right">New Quote</button>
-      <a href="twitter.com/intent/tweet" target="_blank">
+      <a id="tweet-quote" href={getTweetLink()} target="_blank">
       <button className="button" id="tweet-btn">Tweet</button>
       </a>
       </div>
